@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80939a61-0a2d-4022-b0dc-7e0a6e5bdf33" name="Changes" comment="Fix of dir structure.">
+    <list default="true" id="80939a61-0a2d-4022-b0dc-7e0a6e5bdf33" name="Changes" comment="Requirements of the part 2 implemented ,custom methods added in separated classes.">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/spaceshipsecondpart/SpaceShipSecondPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spaceshipsecondpart/SpaceShipSecondPart.java" afterDir="false" />
     </list>
@@ -69,6 +70,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="spaceshipsecondpart" />
       <recent name="spaceship" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
