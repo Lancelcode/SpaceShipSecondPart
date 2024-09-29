@@ -1,89 +1,81 @@
-You have been asked to design a computer system to help with the transport of 
-material taken to the international space station.
-The material is stored in containers. These are flown to the international space 
-station and unloaded and stored in three different areas depending on cargo type. 
-Due to the nature of space flight and the design of the space station you will need to 
-implement a stack and a queue. 
-On Earth the supplies are loaded into pods, items are placed inside a container one 
-on top of another until the container is full. At the other end of the journey containers
-can be emptied by removing items called pods one at a time starting with the top 
-one. The shuttle carries 2 containers with room for 9 pods.
-container1 is emptied first then container2. 
-container1 always has supplies when going to the space station, on rare occasions 
-container2, although transported may be empty.
-There are 3 different types of cargo that is taken to the international space station
-these are Food, Technology and Personal. 
-P a g e 2 | 4
-H16Y Assessment Out3 Queue and Stack ver 5 2024
-The items are marked with a letter identifying the type of cargo and a 2 digit number. 
-So F14 would contain food and P22 would be personal and T45 would be a 
-Technology pod. Each podmust have a unique number. You cannot have two items 
-marked F14 for example.
-When the shuttle reaches the space station it docks with it and the first container is 
-emptied by taking the top pod off of container 1, this is moved through to the loading 
-bay of the space station via a connecting corridor so the first item in will be the first 
-item out at the other side. The operating procedure means that the pod must be fully 
-emptied into the corridor before the items from the container can be stored in the 
-loading bay. Only once a container is emptied into the corridor can the supplies be 
-transferred to the loading bay (use arraylist for the bays). This is done by taking the 
-first item out and taking it to the correct loading bay.
-The loading bay contains 3 areas one for each cargo type. These are Food, 
-Technical and personal. When a container comes out of the corridor it is piled up in 
-the relevant bay.
-• Bay1 [technical]
-• Bay2 [personal]
-• Bay3 [food]
-P a g e 3 | 4
-H16Y Assessment Out3 Queue and Stack ver 5 2024
-The excess material from the previous mission has been removed and returned to 
-Earth. Therefore you can assume the bays are empty before you load the new 
-cargo.
-After each loading bay is filled report the number of items stored in BAY1, BAY2 and 
-BAY3
-Create a solution implementing the Stack and Queue Abstract Data Types from the 
-Java util library for the above scenario. Read the data from a file 
-Use a String to hold the item ID.
-Test the program with the following two data runs. Include a test runs of your own. 
-Data run 1
-Pod one F11, F34, P22, T56, F16, T77, P12, F41, T22.
-Pod two P19, F39, T92, T36, P36, T75, P15, F48, F88.
-Data run 2
-Pod one T11, T34, P22, F56, T77, P12, F41, T11.
-Pod two EMPTY
-If tests are successful run the program with the 7 files found in the missions folder in 
-the teams. Think of theses as 7 separate missions. 
-Supply printout of the stack code queue code used to implement the solution.
-A printout to show the stack and queue at various stages.
-• Show the state of the stack and queue before the pods are loaded.
-• Show the state of the stack and queue when shuttle reaches space station.
-• Show the state of the stack and queue after half the stack has been unloaded.
-• Show the state of the stack and queue after the stack has been unloaded.
-• Show the state of the stack and queue after the loading bay is used.
+# Space Station Cargo Transport System
 
+## Overview
+You have been asked to design a computer system to help with the transport of material taken to the International Space Station (ISS). The material is stored in containers, which are flown to the ISS and unloaded into three different areas, depending on cargo type. Due to the nature of space flight and the design of the space station, you will need to implement **a stack** and **a queue**.
 
+## Loading and Unloading Process
+On Earth, supplies are loaded into pods. Items are placed inside a container, one on top of another, until the container is full. At the destination (the ISS), containers are emptied by removing pods one at a time, starting with the topmost item. Each shuttle carries **two containers** with room for **9 pods each**. 
 
+- **Container 1** is emptied first, followed by **Container 2**.
+- **Container 1** always has supplies when traveling to the space station.
+- On rare occasions, **Container 2** may be empty, even if transported.
 
+## Cargo Types
+There are three types of cargo that are taken to the ISS:
+- **Food**
+- **Technology**
+- **Personal Items**
 
+Each item is marked with a letter identifying the cargo type and a two-digit number. For example:
+- `F14` (Food)
+- `P22` (Personal)
+- `T45` (Technology)
 
+Each pod must have a **unique number**. No duplicates, such as two items labeled `F14`, are allowed.
 
+## Unloading Procedure
+Upon reaching the ISS, the shuttle docks and the first container is emptied. The top pod is taken off container 1 and moved through a connecting corridor to the loading bay. The first item in the corridor will be the first item out.
 
-H16Y Assessment Out3 Queue and Stack ver 5 2024
-You now have to use the following files instead of the Java util library files.
-• ListNode.java
-• ListQueue.java
-• ListStack.java
-• ArrayQueue.java
-• ArrayStack.java
-• Queue.java
-• Stack.java
-• UnderFlowException.java
-Using the files above remove the java stack and queue library files and replace these 
-files instead. Your program should still run with minimum modification. Retest to 
-ensure that the program still works.
-Supply printout of the stack code queue code used to implement the solution. Print
-the files that you have written not the ones supplied.
-A printout to show the stack and queue at various stages.
-• Show the state of the stack and queue before the pods are loaded.
-• Show the state of the before launch
-• Show the state of the stack and queue when shuttle reaches space station.
-• Show the state of the stack and queue after the loading bay is used
+Once a container is fully emptied into the corridor, the supplies can be transferred to the loading bay. The loading bay is divided into three areas:
+1. **Bay 1** - Technical
+2. **Bay 2** - Personal
+3. **Bay 3** - Food
+
+At the beginning of each mission, assume the loading bays are **empty**. After each bay is filled, report the number of items stored in:
+- **BAY 1**
+- **BAY 2**
+- **BAY 3**
+
+## Solution Requirements
+Your solution should implement **the Stack** and **Queue Abstract Data Types** from the Java `util` library for this scenario. You will need to read the data from a file and store item IDs as strings.
+
+### Test Data
+Test the program with the following two data runs, and include a test run of your own:
+
+#### Data Run 1
+- **Pod One:** `F11, F34, P22, T56, F16, T77, P12, F41, T22`
+- **Pod Two:** `P19, F39, T92, T36, P36, T75, P15, F48, F88`
+
+#### Data Run 2
+- **Pod One:** `T11, T34, P22, F56, T77, P12, F41, T11`
+- **Pod Two:** `EMPTY`
+
+If the tests are successful, run the program with the 7 files found in the **missions folder**. Consider these as seven separate missions.
+
+## Code Output
+Provide printouts of the stack and queue code used to implement the solution. Additionally, display the state of the stack and queue at various stages:
+- Before the pods are loaded
+- When the shuttle reaches the space station
+- After half the stack has been unloaded
+- After the stack has been fully unloaded
+- After the loading bay has been used
+
+## Alternative Files (Non-Java util)
+You now need to replace the Java `util` library files with the following custom files:
+- `ListNode.java`
+- `ListQueue.java`
+- `ListStack.java`
+- `ArrayQueue.java`
+- `ArrayStack.java`
+- `Queue.java`
+- `Stack.java`
+- `UnderFlowException.java`
+
+Replace the Java stack and queue library files with the ones listed above. Ensure the program still runs with minimal modification, and retest to verify functionality.
+
+## Code Output with New Files
+Provide printouts of the stack and queue code used to implement the solution. Display the state of the stack and queue at various stages:
+- Before the pods are loaded
+- Before launch
+- When the shuttle reaches the space station
+- After the loading bay has been used
