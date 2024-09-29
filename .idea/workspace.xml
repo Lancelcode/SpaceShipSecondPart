@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80939a61-0a2d-4022-b0dc-7e0a6e5bdf33" name="Changes" comment="Base fixed with all basic requirements of the assessment." />
+    <list default="true" id="80939a61-0a2d-4022-b0dc-7e0a6e5bdf33" name="Changes" comment="Basic requirements,base for the second part/project of the assessment, based on avoid using java.utils libraries.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionFilePathReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/MissionFilePathReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpaceShip.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpaceShipSecondPart.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spaceship/SpaceShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spaceshipsecondpart/SpaceShipSecondPart.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,18 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Lancelcode"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Lancelcode&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Lancelcode/SpaceStationTransport.git",
-    "accountId": "7f23c54d-7bd8-4d67-9e24-206ee41ec414"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Lancelcode/SpaceStationTransport.git&quot;,
+    &quot;accountId&quot;: &quot;7f23c54d-7bd8-4d67-9e24-206ee41ec414&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -46,22 +51,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.SpaceShip.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Djiby/IdeaProjects/SpaceShip",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.SpaceShip.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SpaceShipSecondPart.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Djiby/IdeaProjects/SpaceShip&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="spaceship" />
@@ -87,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1727517026341</updated>
       <workItem from="1727517027550" duration="1882000" />
-      <workItem from="1727519049237" duration="16360000" />
+      <workItem from="1727519049237" duration="18050000" />
     </task>
     <task id="LOCAL-00001" summary="Base fixed with all basic requirements of the assessment.">
       <option name="closed" value="true" />
@@ -97,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727604812229</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Basic requirements,base for the second part/project of the assessment, based on avoid using java.utils libraries.">
+      <option name="closed" value="true" />
+      <created>1727605767512</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727605767512</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Base fixed with all basic requirements of the assessment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Base fixed with all basic requirements of the assessment." />
+    <MESSAGE value="Basic requirements,base for the second part/project of the assessment, based on avoid using java.utils libraries." />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic requirements,base for the second part/project of the assessment, based on avoid using java.utils libraries." />
   </component>
 </project>

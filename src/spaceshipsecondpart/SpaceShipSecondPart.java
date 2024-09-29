@@ -1,17 +1,20 @@
-package spaceship;
+package spaceshipsecondpart;
 
 import java.util.ArrayList;
 import java.util.Queue;
 import java.util.Stack;
 import java.util.concurrent.ArrayBlockingQueue;
+
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.BufferedReader;
+
 import java.util.HashSet;
 import java.util.StringTokenizer;
 
-public class SpaceShip {
+
+public class SpaceShipSecondPart {
 
     // Method to load data from the mission file
     public static String[] loadData(String filename) throws IOException {
