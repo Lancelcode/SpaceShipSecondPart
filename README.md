@@ -60,7 +60,7 @@ Provide printouts of the stack and queue code used to implement the solution. Ad
 - After the stack has been fully unloaded
 - After the loading bay has been used
 
-## Alternative Files (Non-Java util)
+## Second part of the asssessment use Alternative Files (Non-Java util)
 You now need to replace the Java `util` library files with the following custom files:
 - `ListNode.java`
 - `ListQueue.java`
