@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80939a61-0a2d-4022-b0dc-7e0a6e5bdf33" name="Changes" comment="Requirements of the part 2 implemented ,custom methods added in separated classes.">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spaceshipsecondpart/SpaceShipSecondPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spaceshipsecondpart/SpaceShipSecondPart.java" afterDir="false" />
-    </list>
+    <list default="true" id="80939a61-0a2d-4022-b0dc-7e0a6e5bdf33" name="Changes" comment="base without custom methods" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727617785194</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="base without custom methods">
+      <option name="closed" value="true" />
+      <created>1727640648699</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727640648699</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +155,9 @@
     <MESSAGE value="Base fixed with all basic requirements of the assessment." />
     <MESSAGE value="Basic requirements,base for the second part/project of the assessment, based on avoid using java.utils libraries." />
     <MESSAGE value="Fix of dir structure." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix of dir structure." />
+    <MESSAGE value="Requirements of the part 2 implemented ,custom methods added in separated classes." />
+    <MESSAGE value="Requirements of the part 2 implemented ,custom methods in the main app" />
+    <MESSAGE value="base without custom methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="base without custom methods" />
   </component>
 </project>

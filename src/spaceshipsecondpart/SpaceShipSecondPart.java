@@ -1,5 +1,8 @@
 package spaceshipsecondpart;
 
+
+
+
 import java.util.ArrayList;
 import java.util.Queue;
 import java.util.Stack;
@@ -12,7 +15,6 @@ import java.io.BufferedReader;
 
 import java.util.HashSet;
 import java.util.StringTokenizer;
-
 
 public class SpaceShipSecondPart {
 
