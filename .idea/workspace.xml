@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80939a61-0a2d-4022-b0dc-7e0a6e5bdf33" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MissionFilePathReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpaceShip.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mission1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mission2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mission3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mission4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mission5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mission6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mission7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spaceship/SpaceShip.java" afterDir="false" />
-    </list>
+    <list default="true" id="80939a61-0a2d-4022-b0dc-7e0a6e5bdf33" name="Changes" comment="Base fixed with all basic requirements of the assessment." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +20,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Lancelcode"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Lancelcode/SpaceStationTransport.git",
+    "accountId": "7f23c54d-7bd8-4d67-9e24-206ee41ec414"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -92,11 +87,24 @@
       <option name="presentableId" value="Default" />
       <updated>1727517026341</updated>
       <workItem from="1727517027550" duration="1882000" />
-      <workItem from="1727519049237" duration="15389000" />
+      <workItem from="1727519049237" duration="16360000" />
     </task>
+    <task id="LOCAL-00001" summary="Base fixed with all basic requirements of the assessment.">
+      <option name="closed" value="true" />
+      <created>1727604812229</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727604812229</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Base fixed with all basic requirements of the assessment." />
+    <option name="LAST_COMMIT_MESSAGE" value="Base fixed with all basic requirements of the assessment." />
   </component>
 </project>
