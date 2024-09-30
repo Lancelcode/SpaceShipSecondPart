@@ -1,7 +1,4 @@
-package spaceshipsecondpart;
-
-
-
+package spaceshipsecondarray;
 
 import java.util.ArrayList;
 import java.util.Queue;
@@ -16,7 +13,7 @@ import java.io.BufferedReader;
 import java.util.HashSet;
 import java.util.StringTokenizer;
 
-public class SpaceShipSecondPart {
+public class SpaceShipSecondArray {
 
     // Method to load data from the mission file
     public static String[] loadData(String filename) throws IOException {
