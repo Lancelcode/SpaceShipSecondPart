@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80939a61-0a2d-4022-b0dc-7e0a6e5bdf33" name="Changes" comment="base with custom methods and Working as expected.">
+    <list default="true" id="80939a61-0a2d-4022-b0dc-7e0a6e5bdf33" name="Changes" comment="fixes in the logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spaceshipsecondarray/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spaceshipsecondarray/ArrayStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/spaceshipsecondarray/SpaceShipSecondArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spaceshipsecondarray/SpaceShipSecondArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +107,7 @@
       <workItem from="1727607909727" duration="399000" />
       <workItem from="1727617702932" duration="2531000" />
       <workItem from="1727711092591" duration="12326000" />
-      <workItem from="1727728106904" duration="7499000" />
+      <workItem from="1727728106904" duration="8120000" />
     </task>
     <task id="LOCAL-00001" summary="Base fixed with all basic requirements of the assessment.">
       <option name="closed" value="true" />
@@ -166,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727725070217</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixes in the logic">
+      <option name="closed" value="true" />
+      <created>1727735933797</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727735933797</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +198,7 @@
     <MESSAGE value="Requirements of the part 2 implemented ,custom methods in the main app" />
     <MESSAGE value="base without custom methods" />
     <MESSAGE value="base with custom methods and Working as expected." />
-    <option name="LAST_COMMIT_MESSAGE" value="base with custom methods and Working as expected." />
+    <MESSAGE value="fixes in the logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes in the logic" />
   </component>
 </project>

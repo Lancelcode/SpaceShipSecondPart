@@ -54,14 +54,15 @@ public class SpaceShipSecondArray {
                 sd = loadData(mission);
             } catch (IOException e) {
                 System.out.println("Aborting mission: " + mission + " due to file reading error. Cause: " + e.getMessage());
-                System.out.println("**************************************************************************************************************************************************");
+                System.out.println("***************************************************************************************");
                 continue; // Skip to the next mission if there's a file error
             }
 
             // Check if there are too many pods in the mission
             if (sd.length > MAX_PODS) {
-                System.out.println("Aborting mission: " + mission + " due to too many pods (" + sd.length + " pods). Maximum allowed is " + MAX_PODS + ".");
-                System.out.println("**************************************************************************************************************************************************");
+                System.out.println("*************************************************************************************************");
+                System.out.println("*** Aborting mission: " + mission + " due to too many pods (" + sd.length + " pods). Maximum allowed is " + MAX_PODS + ". ***");
+                System.out.println("*************************************************************************************************");
                 continue; // Skip the rest of the mission processing and move to the next mission
             }
 
