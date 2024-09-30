@@ -1,9 +1,7 @@
 package spaceshipsecondarray;
 
 import java.util.ArrayList;
-import java.util.Queue;
-import java.util.Stack;
-import java.util.concurrent.ArrayBlockingQueue;
+
 
 import java.io.File;
 import java.io.FileReader;
@@ -12,6 +10,12 @@ import java.io.BufferedReader;
 
 import java.util.HashSet;
 import java.util.StringTokenizer;
+
+
+
+
+
+
 
 public class SpaceShipSecondArray {
 
@@ -81,9 +85,9 @@ public class SpaceShipSecondArray {
                 continue; // Skip the rest of the mission if there are issues with pod validation
             }
 
-            Stack<String> container1 = new Stack<>();
-            Stack<String> container2 = new Stack<>();
-            Queue<String> corridor1 = new ArrayBlockingQueue<>(MAX_PODS);
+            Stack<String> container1 = new ArrayStack<>();
+            Stack<String> container2 = new ArrayStack<>();
+            Queue<String> corridor1 = new ArrayQueue<>();
 
             System.out.println("\n------------------------------\n");
             System.out.println("\nInitial container1 amount of pods: " + container1.size());
@@ -95,7 +99,7 @@ public class SpaceShipSecondArray {
 
             // Load the first 9 elements into container1
             for (int i = 0; i < sd.length && container1.size() < 9; i++) {
-                container1.add(sd[i]);
+                container1.push(sd[i]);
             }
 
             System.out.println("\ncontainer1 size: " + container1.size());
@@ -103,7 +107,7 @@ public class SpaceShipSecondArray {
 
             // Load the remaining elements into container2
             for (int k = 9; k < sd.length && container2.size() < 9; k++) {
-                container2.add(sd[k]);
+                container2.push(sd[k]);
             }
 
             System.out.println("\n===================");
@@ -134,7 +138,7 @@ public class SpaceShipSecondArray {
             ArrayList<String> bay3 = new ArrayList<>();
 
             // Sort elements into the respective bays based on first character
-            while (!corridor1.isEmpty()) {
+            while (!corridor1.empty()) {
                 String pod = corridor1.remove();
                 if (pod.charAt(0) == 'P') {
                     bay1.add(pod);
