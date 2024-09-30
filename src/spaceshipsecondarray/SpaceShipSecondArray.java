@@ -44,7 +44,9 @@ public class SpaceShipSecondArray {
         final int MAX_PODS = 18; // Maximum allowed pods for a mission
 
         for (String mission : missions) {
-            System.out.println("\nLaunching Mission: " + mission);
+            System.out.println("\n********************************************");
+            System.out.println("*** Launching Mission: " + mission + "  ***");
+            System.out.println("********************************************");
             String[] sd;
 
             // Try loading the data
@@ -52,12 +54,14 @@ public class SpaceShipSecondArray {
                 sd = loadData(mission);
             } catch (IOException e) {
                 System.out.println("Aborting mission: " + mission + " due to file reading error. Cause: " + e.getMessage());
+                System.out.println("**************************************************************************************************************************************************");
                 continue; // Skip to the next mission if there's a file error
             }
 
             // Check if there are too many pods in the mission
             if (sd.length > MAX_PODS) {
                 System.out.println("Aborting mission: " + mission + " due to too many pods (" + sd.length + " pods). Maximum allowed is " + MAX_PODS + ".");
+                System.out.println("**************************************************************************************************************************************************");
                 continue; // Skip the rest of the mission processing and move to the next mission
             }
 
@@ -68,14 +72,18 @@ public class SpaceShipSecondArray {
             boolean abortMission = false;
             for (String pod : sd) {
                 if (!uniquePods.add(pod)) {
-                    System.out.println("Aborting mission: " + mission + " due to duplicate pod ID: " + pod);
+                    System.out.println("***********************************************************************");
+                    System.out.println("*** Aborting mission: " + mission + " due to duplicate pod ID: " + pod + " ***");
+                    System.out.println("***********************************************************************");
                     abortMission = true;
                     break;
                 }
 
                 // Check if pod ID has exactly 3 characters
                 if (pod.length() != 3) {
-                    System.out.println("Aborting mission: " + mission + " due to invalid pod ID format: " + pod + ". Pod ID must be exactly 3 characters.");
+                    System.out.println("****************************************************************************************************************");
+                    System.out.println("*** Aborting mission: " + mission + " due to invalid pod ID format: " + pod + ". Pod ID must be exactly 3 characters." + " ***");
+                    System.out.println("****************************************************************************************************************");
                     abortMission = true;
                     break;
                 }
@@ -90,32 +98,51 @@ public class SpaceShipSecondArray {
             Queue<String> corridor1 = new ArrayQueue<>();
 
             System.out.println("\n------------------------------\n");
-            System.out.println("\nInitial container1 amount of pods: " + container1.size());
-            System.out.println("Initial container2 amount of pods: " + container2.size());
-
+            System.out.println("\nInitial container1 amount of pods: " + (container1.size() == 0 ? "Is empty" : container1.size()));
+            System.out.println("\nInitial container2 amount of pods: " + (container2.size() == 0 ? "Is empty" : container2.size()));
             System.out.println("\n------------------------------\n");
-            System.out.println("\nShuttle has reached the space station, the container 1 have " + container1.size() + " amount of pods, container 2 has " + container2.size() + " amount of pods.");
-            System.out.println("\nLoading pods in to containers!");
+
+            for(int k=0; k< sd.length; k++)
+            {
+                System.out.print(sd[k]+" ");
+                if(container1.size()<9)
+                {
+                    container1.push(sd[k]);
+                }
+            }
+            System.out.println("\n-------------------------------total pods------------------------------\n");
+
+
+            System.out.println("\nLoading cargo to container 1 and sending to the ship!");
 
             // Load the first 9 elements into container1
-            for (int i = 0; i < sd.length && container1.size() < 9; i++) {
+            for (int i = 9; i < sd.length && container1.size() < 9; i++) {
                 container1.push(sd[i]);
             }
-
-            System.out.println("\ncontainer1 size: " + container1.size());
-            System.out.println("container2 size: " + container2.size());
-
-            // Load the remaining elements into container2
             for (int k = 9; k < sd.length && container2.size() < 9; k++) {
                 container2.push(sd[k]);
+
             }
+            System.out.println("\ncontainer1 size: " + container1.size());
+            System.out.println("container2 size: " + container2.size());
+            System.out.println(container2.size() == 0
+                    ? "There are no elements remaining to load into container2"
+                    : "Preparing to load " + container2.size() + " elements into container2");
+
+            System.out.println("\n------------------------------\n");
+            System.out.println("\nShuttle has reached the space station, the container 1 has " +
+                    (container1.size() == 0 ? "no pods" : container1.size() + " pods") +
+                    ", container 2 has " +
+                    (container2.size() == 0 ? "no pods" : container2.size() + " pods"));
+            System.out.println("\nLoading pods into containers!" + container1.toString());
+
+
 
             System.out.println("\n===================");
-            System.out.println("\nContainer1 size: " + container1.size());
-            System.out.println("Container2 size: " + container2.size());
+            System.out.println("\nContainer1 size: " + (container1.size() == 0 ? "Is empty" : container1.size()));
+            System.out.println("Container2 size: " + (container2.size() == 0 ? "Is empty" : container2.size()));
             System.out.println("\n===================\n");
 
-            // Proceed with the rest of the logic
             System.out.println("\n----------------------------------------------------------");
             System.out.println("\nTransporting pods to the loading bay through the corridor.");
             System.out.println("\n----------------------------------------------------------\n");
@@ -140,7 +167,7 @@ public class SpaceShipSecondArray {
             // Sort elements into the respective bays based on first character
             while (!corridor1.empty()) {
                 String pod = corridor1.remove();
-                if (pod.charAt(0) == 'P') {
+                       if (pod.charAt(0) == 'P') {
                     bay1.add(pod);
                 } else if (pod.charAt(0) == 'F') {
                     bay2.add(pod);

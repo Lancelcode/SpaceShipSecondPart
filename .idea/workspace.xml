@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80939a61-0a2d-4022-b0dc-7e0a6e5bdf33" name="Changes" comment="base without custom methods">
-      <change afterPath="$PROJECT_DIR$/src/spaceshipsecondarray/ArrayQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spaceshipsecondarray/ArrayStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spaceshipsecondarray/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spaceshipsecondarray/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spaceshipsecondarray/UnderflowException.java" afterDir="false" />
+    <list default="true" id="80939a61-0a2d-4022-b0dc-7e0a6e5bdf33" name="Changes" comment="base with custom methods and Working as expected.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spaceshipsecondarray/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spaceshipsecondarray/ArrayStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/spaceshipsecondarray/SpaceShipSecondArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spaceshipsecondarray/SpaceShipSecondArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spaceshipsecondpart/ArrayQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spaceshipsecondpart/ArrayStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spaceshipsecondpart/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spaceshipsecondpart/Queue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spaceshipsecondpart/Stack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spaceshipsecondpart/TestingUpdatedMAW.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spaceshipsecondpart/UnderflowException.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,27 +53,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.SpaceShip.executor": "Run",
-    "Application.SpaceShipSecondArray.executor": "Run",
-    "Application.SpaceShipSecondPart.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Djiby/IdeaProjects/SpaceShipSecondArray/src/spaceshipsecondarray",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.SpaceShip.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SpaceShipSecondArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SpaceShipSecondPart.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Djiby/IdeaProjects/SpaceShipThirdArrayList&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="spaceshipsecondpart" />
@@ -118,7 +107,8 @@
       <workItem from="1727519049237" duration="18050000" />
       <workItem from="1727607909727" duration="399000" />
       <workItem from="1727617702932" duration="2531000" />
-      <workItem from="1727711092591" duration="9153000" />
+      <workItem from="1727711092591" duration="12326000" />
+      <workItem from="1727728106904" duration="7499000" />
     </task>
     <task id="LOCAL-00001" summary="Base fixed with all basic requirements of the assessment.">
       <option name="closed" value="true" />
@@ -168,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727711343393</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="base with custom methods and Working as expected.">
+      <option name="closed" value="true" />
+      <created>1727725070217</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727725070217</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +190,7 @@
     <MESSAGE value="Requirements of the part 2 implemented ,custom methods added in separated classes." />
     <MESSAGE value="Requirements of the part 2 implemented ,custom methods in the main app" />
     <MESSAGE value="base without custom methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="base without custom methods" />
+    <MESSAGE value="base with custom methods and Working as expected." />
+    <option name="LAST_COMMIT_MESSAGE" value="base with custom methods and Working as expected." />
   </component>
 </project>

@@ -66,4 +66,24 @@ public class ArrayStack<AnyType> implements Stack<AnyType> {
         return topOfStack + 1;
     }
 
+    @Override
+    public String toString() {
+        if (empty()) {
+            return "[]";
+        }
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+
+        for (int i = 0; i <= topOfStack; i++) {
+            sb.append(theArray[i]);
+            if (i < topOfStack) {
+                sb.append(", ");
+            }
+        }
+
+        sb.append("]");
+        return sb.toString();
+    }
+
 }
