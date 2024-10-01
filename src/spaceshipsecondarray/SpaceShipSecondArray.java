@@ -103,13 +103,10 @@ public class SpaceShipSecondArray {
             System.out.println("\nInitial container2 amount of pods: " + (container2.size() == 0 ? "Is empty" : container2.size()));
             System.out.println("\n------------------------------\n");
 
-            for(int k=0; k< sd.length; k++)
-            {
+            // Load the first 9 elements into container1
+            for(int k=0; k< sd.length; k++) {
                 System.out.print(sd[k]+" ");
-                if(container1.size()<9)
-                {
-                    container1.push(sd[k]);
-                }
+                if(container1.size()<9) {container1.push(sd[k]);}
             }
             System.out.println("\n-------------------------------total pods------------------------------\n");
 
